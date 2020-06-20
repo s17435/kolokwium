@@ -76,11 +76,13 @@ namespace KolokowiumAPBD.Controller
                     return NotFound("Nowy czas jest poza eventem");
                 }
 
-              
+
 
             }
+
             artistEvent.performanceDate = artistEventDto.performanceDate;
             return Ok("Zapisano datę");
-        
+
+        }
     }
 }
