@@ -51,14 +51,15 @@ namespace KolokowiumAPBD.Controller
             {
                 return NotFound("Nie znaleziono artysty");
             }
-            
+
             var event1 = _context.Event.FirstOrDefault(h => h.IdEvent == artistEventDto.idEvent);
             if (event1 == null)
             {
                 return NotFound("Nie znaleziono wydarzenia");
             }
-            
-            var artistEvent = _context.Artist_Event.Where(h => h.IdArtist == artist.idArtist && h.IdEvent == artistEventDto.idEvent).FirstOrDefault();
+
+            var artistEvent = _context.Artist_Event
+                .Where(h => h.IdArtist == artist.idArtist && h.IdEvent == artistEventDto.idEvent).FirstOrDefault();
             if (artistEvent == null)
             {
                 return NotFound("Nie znaleziono artysty w wydarzeniu");
@@ -68,15 +69,18 @@ namespace KolokowiumAPBD.Controller
             {
                 return NotFound("Event sie juz zaczal");
             }
-            if (artistEventDto.performaceDate < event1.StartDate || artistEvent.performaceDate > event1.EndDate){
+
+            if (artistEventDto.performaceDate < event1.StartDate || artistEvent.performaceDate > event1.EndDate)
+            {
                 {
                     return NotFound("Nowy czas jest poza eventem");
                 }
 
-                artistEvent.performanceDate = artistEventDto.performanceDate;
-                return Ok("Zapisano datę");
-      
-                 }
+              
 
+            }
+            artistEvent.performanceDate = artistEventDto.performanceDate;
+            return Ok("Zapisano datę");
+        
     }
 }
