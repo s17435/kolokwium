@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/extResources" t="IncludeRecursive" />
+    <e p="$USER_HOME$/Library/Caches/Rider2019.3/resharper-host/local/Transient/ReSharperHost/v193/SolutionCaches/_KolokowiumAPBD.1270800258.00" t="ExcludeRecursive" />
+    <e p="$APPLICATION_CONFIG_DIR$/consoles/db" t="IncludeRecursive" />
+    <e p="$PROJECT_DIR$" t="IncludeFlat">
+      <e p="KolokowiumAPBD" t="IncludeRecursive">
+        <e p="appsettings.Development.json" t="Include" />
+        <e p="appsettings.json" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Controller" t="Include">
+          <e p="ArtistController.cs" t="Include" />
+        </e>
+        <e p="dotnet" t="Include" />
+        <e p="DTO" t="Include">
+          <e p="ArtistDTO.cs" t="Include" />
+          <e p="ArtistEventDTO.cs" t="Include" />
+        </e>
+        <e p="KolokowiumAPBD.csproj" t="IncludeRecursive" />
+        <e p="Model" t="Include">
+          <e p="Artist.cs" t="Include" />
+          <e p="Artist_Event.cs" t="Include" />
+          <e p="Event.cs" t="Include" />
+          <e p="Event_Organiser.cs" t="Include" />
+          <e p="KolokwiumDbContext.cs" t="Include" />
+          <e p="Organiser.cs" t="Include" />
+        </e>
+        <e p="obj" t="ExcludeRecursive">
+          <e p="Debug" t="Include">
+            <e p="netcoreapp3.1" t="Include">
+              <e p="KolokowiumAPBD.AssemblyInfo.cs" t="Include" />
+            </e>
+          </e>
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
+        <e p="Startup.cs" t="Include" />
+      </e>
+      <e p="KolokowiumAPBD.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>
